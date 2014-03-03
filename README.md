@@ -5,6 +5,8 @@ Blocking bad is a tetris clone with an AI that always gives the worst possible p
 
 made with Lua and [LÖVE](http://love2d.org/) framework.
 
+Note: Love 0.8.0 is required
+
 Credits
 ------
 
