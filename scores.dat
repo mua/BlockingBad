@@ -1,0 +1,35 @@
+return {
+-- Table: {1}
+{
+   {2},
+   {3},
+   {4},
+   {5},
+   {6},
+},
+-- Table: {2}
+{
+   ["name"]="asd",
+   ["score"]=346,
+},
+-- Table: {3}
+{
+   ["name"]="ozan",
+   ["score"]=100,
+},
+-- Table: {4}
+{
+   ["name"]="utku",
+   ["score"]=89,
+},
+-- Table: {5}
+{
+   ["name"]="utku",
+   ["score"]=87,
+},
+-- Table: {6}
+{
+   ["name"]="utku",
+   ["score"]=80,
+},
+}
