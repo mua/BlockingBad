@@ -11,7 +11,7 @@ function Class( baseClass )
     function new_class:create(...)
         local newinst = {}
         setmetatable( newinst, class_mt )
-		newinst:init(unpack(arg))
+		newinst:init(...)
         return newinst
     end
     if baseClass then
