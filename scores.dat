@@ -14,22 +14,22 @@ return {
 },
 -- Table: {3}
 {
-   ["name"]="ozan",
-   ["score"]=100,
+   ["name"]="",
+   ["score"]=178,
 },
 -- Table: {4}
 {
-   ["name"]="utku",
-   ["score"]=89,
+   ["name"]="ozan",
+   ["score"]=100,
 },
 -- Table: {5}
 {
    ["name"]="utku",
-   ["score"]=87,
+   ["score"]=89,
 },
 -- Table: {6}
 {
    ["name"]="utku",
-   ["score"]=80,
+   ["score"]=87,
 },
 }
