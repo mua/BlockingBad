@@ -77,7 +77,7 @@ function love.load()
 		click = love.audio.newSource("assets/click.ogg", "static"),
 		fail = love.audio.newSource("assets/fail.ogg", "static")}
 	music =	{
-		default = love.audio.newSource("assets/tetris.mod")}
+		default = love.audio.newSource("assets/music.mp3")}
 	settings = {
 		difficulty = 3}
 	scoreboard = table.load("scores.dat") or 

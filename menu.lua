@@ -64,6 +64,7 @@ function MenuScene:startUI()
 	ui["start"] = Button:create("Start", x, y)
 	ui["score"] = Button:create("Highscores", x, y+40)
 	ui["settings"] = Button:create("Difficulty", x, y+75)	
+	ui["about"] = Button:create("About", x, y+215)
 	return ui
 end
 
@@ -76,6 +77,18 @@ function MenuScene:settingsUI()
 	ui["setHard"] = Button:create("Hard", x, y+65)
 	local names = {"setEasy", "setNormal", "setHard"}	
 	ui[names[settings.difficulty]].normalColor = {255, 0, 0, 255}
+	return ui
+end
+
+--Start ui
+function MenuScene:aboutUI()
+	local x, y = windowWidth/2, windowHeight/2 + 80
+	local ui = {}
+	ui["title"] = Label:create("Blocking Bad", x, y)
+	ui["name"] = Label:create("M. Utku Altinkaya", x, y+40)
+	ui["desc"] = Label:create("an open source free game", x, y+80)
+	ui["site"] = Button:create("Site - Source", x, y+120)
+	ui["menu"] = Button:create("Back", x, y+200)
 	return ui
 end
 
@@ -129,6 +142,8 @@ function MenuScene:buttonClick(button)
 		game:setState(GameScene:create())		
 	elseif button == "settings" then
 		self.ui = self:settingsUI()
+	elseif button == "about" then
+		self.ui = self:aboutUI()		
 	elseif button == "menu" then
 		self.ui = self:startUI()		
 	elseif button == "score" then
@@ -142,6 +157,8 @@ function MenuScene:buttonClick(button)
 	elseif button == "setHard" then	
 		settings.difficulty = 3
 		self.ui = self:startUI()
+	elseif button == "site" then
+		os.execute("start http://mua.github.io")
 	end
 end
 
