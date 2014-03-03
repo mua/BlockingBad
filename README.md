@@ -7,6 +7,8 @@ made with Lua and [LÖVE](http://love2d.org/) framework.
 
 ps: This game was just a challange I've given for an interview.
 
+![](https://raw.github.com/mua/BlockingBad/master/doc/scrshot2.png)
+
 Credits
 ------
 
